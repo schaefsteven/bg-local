@@ -1,0 +1,39 @@
+title = "BGLocal.org"
+baseURL = ""
+
+[params]
+primEmail = "steven@ssweb.services"
+primPhone = "(906) 291-0614"
+firstName = "Steven"
+lastName = "Schaefer"
+
+[markup]
+
+[markup.goldmark]
+
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "modus-vivendi"
+
+[module]
+
+[[module.mounts]]
+source = "static"
+target = "static"
+
+[[module.mounts]]
+source = "../node_modules"
+target = "static/node_modules"
+
+[[module.mounts]]
+source = "favicon"
+target = "static"
+
+[build]
+writeStats = true
+
